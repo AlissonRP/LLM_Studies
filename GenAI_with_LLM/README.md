@@ -1,0 +1,1 @@
+My notes of [course]( https://www.coursera.org/learn/generative-ai-with-llms)
