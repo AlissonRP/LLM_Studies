@@ -18,3 +18,8 @@
 | Decoder         | CTRL, GPT, GPT-2, Transformer XL           | Text generation                                                                  |
 | Encoder-decoder | BART, T5, Marian, mBART                    | Summarization, translation, generative question answering                        |
 
+
+## Tokenizers and Models
+* pytorch_model.bin guarda o dicionário dos pesos.
+* *vocabulary*: total de tokens difererntes no corpus
+* *padding token*: adicionado para garantir mesmo tamanho das sentenças, pode ser encontrado em `tokenizer.pad_token_id`, note que os tokens de `padding` devem ser mascarados no mecanismo de atenção
