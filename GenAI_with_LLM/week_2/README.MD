@@ -56,5 +56,11 @@ $$\text{Precision} = \dfrac{# \text{LCS(Gen, Ref)}}{#unigrams in output} \quad \
 * Existem alguns "padrões" de datasets para testar a performance de LLM's
 
 -------
+# Fundamentos
+Escritas sobre conceitos básicos/fundamentais para NLP.
 
+## Word Embedding
 
+## RNN
+
+## LSTM
