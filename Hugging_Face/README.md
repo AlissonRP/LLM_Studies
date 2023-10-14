@@ -19,7 +19,22 @@
 | Encoder-decoder | BART, T5, Marian, mBART                    | Summarization, translation, generative question answering                        |
 
 
+
+### Output de um Transformer
+* **batch size**: número de sequências processadas por vez
+* **Sequence length**: número representativo da sequência (length do tensor de saída)
+* *hidden size**: a dimensão de cada vetor de input
+
+
+
 ## Tokenizers and Models
 * pytorch_model.bin guarda o dicionário dos pesos.
 * *vocabulary*: total de tokens difererntes no corpus
 * *padding token*: adicionado para garantir mesmo tamanho das sentenças, pode ser encontrado em `tokenizer.pad_token_id`, note que os tokens de `padding` devem ser mascarados no mecanismo de atenção
+* argumento `return_tensors` serve pra dizer se vc quer do pytorch, tensorflow ou numpy.
+
+## Fine-Tuning A pretrained model
+* `token_type_ids`: separa as sentenças (a depender do modelo)
+* Alguns modelos utilizam tokens especiais para iniciar e finaliza/separar sentenças
+* A função que transforma tupla/lista/dic é chamada de `collate function`  
+* `dynamic padding`: O tamanho do padding é definido pelo tamanho da maior sentença do batch

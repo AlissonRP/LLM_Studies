@@ -64,3 +64,5 @@ Escritas sobre conceitos básicos/fundamentais para NLP.
 ## RNN
 
 ## LSTM
+
+## Foundations Models
