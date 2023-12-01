@@ -1,5 +1,7 @@
 # Exploring foundation models
 
+**Large language models can be inconsistent. Sometimes they nail the answer to questions, other times they regurgitate random facts from their training data. If they occasionally sound like they have no idea what they’re saying, it’s because they don’t. LLMs know how words relate statistically, but not what they mean.**
+
 <p align="center"><img align="center" src="imgs/nlp_history.png" height="350px" width="790"/></p>
 
 
@@ -17,7 +19,8 @@ $$P(w_1, ...w_n) = P(w_1)P(w_2|w_1).....P(w_n|w_1,w_2,... w_{n-1})$$
 <p align="center"><img align="center" src="imgs/fm_evolving.png" height="330px" width="790"/></p>
 
 * *Retrieval augmented generation*: Conversational models can be augmented with search results based on the conversation (outside sources)
-* not only the training have a high cost, the deployment also has
+* not only the training have a high cost,  the deployment also has
 * Paper: *Survey on KEPLM*
 
 ## Session 2
+* **humans are flexible and adaptable - our benchmarks should be too**
